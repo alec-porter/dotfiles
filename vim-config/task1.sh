@@ -28,7 +28,6 @@ echo "Install colors and plugins (y/Y)"
 read input
 if [[ "$input" == "Y" || "$input" == "y" ]]
 then
-
 	if [[ -e ~/.vim/colors ]]
 	then
 		wget https://raw.githubusercontent.com/jaredgorski/SpaceCamp/refs/heads/master/colors/spacecamp.vim -O ~/.vim/colors/spacecamp.vim
@@ -50,4 +49,6 @@ then
 	else
 		git clone https://github.com/preservim/vim-indent-guides.git ~/.vim/bundle/vim-indent-guides
 	fi
+else
+	echo "No colors or plugins installed"
 fi
