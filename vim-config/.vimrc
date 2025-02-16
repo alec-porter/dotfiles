@@ -20,8 +20,6 @@ Plugin 'scrooloose/nerdtree'
 
 " Indent guides Plugin
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'yggdroot/indentline'	
-
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
