@@ -12,7 +12,7 @@ then
 else
 	# if Vundle.vim is not installed, ask user to install
 	echo "Vundle does not exist"
-	echo "Enter y/Y to install it, any other key to exit"
+	echo "Enter Y/y to install it, any other key to exit"
 	read input
 	# if user enters y or Y then clone the repo
 	if [[ "$input" == "Y" || "$input" == "y" ]]
@@ -24,7 +24,7 @@ else
 	fi
 fi
 
-echo "Install colors and plugins (y/Y)"
+echo "Install colors and plugins (Y/y), any other key to exit"
 read input
 if [[ "$input" == "Y" || "$input" == "y" ]]
 then
