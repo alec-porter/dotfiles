@@ -24,13 +24,30 @@ else
 	fi
 fi
 
-if [[ -e ~/.vim/colors ]]
+echo "Install colors and plugins (y/Y)"
+read input
+if [[ "$input" == "Y" || "$input" == "y" ]]
 then
-	wget https://raw.githubusercontent.com/jaredgorski/SpaceCamp/refs/heads/master/colors/spacecamp.vim -O ~/.vim/colors/spacecamp.vim
-else
-	mkdir -p ~/.vim/colors
-	wget https://raw.githubusercontent.com/jaredgorski/SpaceCamp/refs/heads/master/colors/spacecamp.vim -O ~/.vim/colors/spacecamp.vim
+
+	if [[ -e ~/.vim/colors ]]
+	then
+		wget https://raw.githubusercontent.com/jaredgorski/SpaceCamp/refs/heads/master/colors/spacecamp.vim -O ~/.vim/colors/spacecamp.vim
+	else
+		mkdir -p ~/.vim/colors
+		wget https://raw.githubusercontent.com/jaredgorski/SpaceCamp/refs/heads/master/colors/spacecamp.vim -O ~/.vim/colors/spacecamp.vim
+	fi
+
+	if [[ -e ~/.vim/bundle/nerdtree ]]
+	then
+		echo "You already have NERDTree"
+	else
+		git clone https://github.com/preservim/nerdtree.git ~/.vim/bundle/nerdtree
+	fi
+	
+	if [[ -e ~/.vim/bundle/vim-indent-guides ]]
+	then
+		echo "You already have Indent Guides"
+	else
+		https://github.com/preservim/vim-indent-guides.git ~./vim/bundle/vim-indent-guides
+	fi
 fi
-
-
-
