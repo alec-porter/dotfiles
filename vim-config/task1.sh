@@ -48,6 +48,6 @@ then
 	then
 		echo "You already have Indent Guides"
 	else
-		https://github.com/preservim/vim-indent-guides.git ~/.vim/bundle/vim-indent-guides
+		git clone https://github.com/preservim/vim-indent-guides.git ~/.vim/bundle/vim-indent-guides
 	fi
 fi
