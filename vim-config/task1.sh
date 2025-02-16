@@ -23,3 +23,14 @@ else
 		echo "Exiting"
 	fi
 fi
+
+if [[ -e ~/.vim/colors ]]
+then
+	mkdir -p ~/.vim/colors
+	wget https://raw.githubusercontent.com/jaredgorski/SpaceCamp/refs/heads/master/colors/spacecamp.vim -O ~/.vim/colors/spacecamp.vim
+else
+	wget https://raw.githubusercontent.com/jaredgorski/SpaceCamp/refs/heads/master/colors/spacecamp.vim -O ~/.vim/colors/spacecamp.vim
+fi
+
+
+
