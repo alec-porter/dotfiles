@@ -30,10 +30,10 @@ if [[ "$input" == "Y" || "$input" == "y" ]]
 then
 	if [[ -e ~/.vim/colors ]]
 	then
-		wget https://raw.githubusercontent.com/jaredgorski/SpaceCamp/refs/heads/master/colors/spacecamp.vim -O ~/.vim/colors/spacecamp.vim
+		wget -P ~/.vim/colors https://raw.githubusercontent.com/jaredgorski/SpaceCamp/refs/heads/master/colors/spacecamp.vim
 	else
 		mkdir -p ~/.vim/colors
-		wget https://raw.githubusercontent.com/jaredgorski/SpaceCamp/refs/heads/master/colors/spacecamp.vim -O ~/.vim/colors/spacecamp.vim
+		wget -P ~/.vin/colors https://raw.githubusercontent.com/jaredgorski/SpaceCamp/refs/heads/master/colors/spacecamp.vim
 	fi
 
 	if [[ -e ~/.vim/bundle/nerdtree ]]
