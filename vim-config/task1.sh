@@ -20,7 +20,7 @@ else
 		echo "Installing"
 		git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	else
-		echo "Exiting"
+		echo "Vundle not installed"
 	fi
 fi
 
