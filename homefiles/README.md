@@ -9,4 +9,6 @@ The .bashrc file contains five custom alias:<br>
 The first one connects to my CEG2410 Amazon Web Service instance.<br>
 The second and thrid ones make updating and upgrading packages slightly easier.<br>
 The forth one sets commonly used file permissions.<br>
+(ref: https://gist.github.com/zachbrowne/8bc414c9f30192067831fafebd14255c)<br>
 The fifth one is the "go to" permission setting when you just need something to work.<br>
+(ref: https://gist.github.com/zachbrowne/8bc414c9f30192067831fafebd14255c)<br>
