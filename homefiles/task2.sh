@@ -7,6 +7,7 @@ read input
 
 if [[ "$input" == "Y" || "$input" == "y" ]]
 then
+	# check if bashrc file was already downloaded
 	if [[ -f $HOME/altbashrc/.alecsultimatebashrc ]]
 	then
 		echo "I looks like you already ran this script. Terminating."
@@ -27,10 +28,12 @@ then
 
 elif [[ "$input" == "R" || "$input" == "r" ]]
 then
+	# check if bashrc backup file exists to revert back to
 	if [[ ! -f $HOME/.bashrc.bak.revert ]]
 	then
 		echo "You do not have a bachrc backup file to revert back to.  It is possible you did not run this script.  Exiting without making changes."
 	else
+		# remove symbolic link and directory, move backup bashrc file to primary bashrc file 
 		echo "Reverting"
 		rm $HOME/.bashrc
 		mv $HOME/.bashrc.bak.revert $HOME/.bashrc
