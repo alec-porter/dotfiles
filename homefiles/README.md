@@ -13,8 +13,9 @@ The forth one sets commonly used file permissions ([reference link](https://gist
 The fifth one is the "go to" permission setting when you just need something to work ([reference link](https://gist.github.com/zachbrowne/8bc414c9f30192067831fafebd14255c)).<br><br>
 
 <h2>Script Overview</h2>
+
 The script task2.sh gives you the option to download and enable a new bashrc file or restore your old bashrc file if you previously ran the script.<br>
-Entering "Y" or "y" will download and enable the new bashrc file.  For the best results, log out and back in.<br>
-Entering "R" or "r" will revert your old bashrc file and remove the bashrc download from this repo.<br>
+Entering "Y" or "y" will download and enable the new bashrc file.  For the best results, log out and back in after running the script.<br>
+Entering "R" or "r" will revert your old bashrc file and remove the bashrc download from this repo.  For the best results, log out and back in after running the script.<br>
 Entering any other key will quit the script without making any changes.<br>
 Note: running the script moves your current bashrc file to ```.bashrc.bak.revert```. DO NOT remove this file from your home directory.  Doing so will disable the script's ability to restore your old bashrc file.
