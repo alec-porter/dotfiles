@@ -20,7 +20,6 @@ then
 		# move bashrc to backup, create symbolic link and enable new bashrc file
 		mv $HOME/.bashrc $HOME/.bashrc.bak.revert
 		ln -s $HOME/altbashrc/.alecsultimatebashrc $HOME/.bashrc
-	
 		echo "Your new bashrc file has been downloaded and enabled.  Log out and back in for changes to take effect."
 		exec bash
 		source $HOME/.bashrc
