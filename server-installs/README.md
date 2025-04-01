@@ -2,7 +2,7 @@
 
 This script installs Ansible. [Ansible Hompage](https://www.redhat.com/en/ansible-collaborative)
 
-The script checks to see if you are running as root. If you are not running as root (EUID is 0) it exits. <br>
+The script checks to see if you are running as root or using sudo. If you are not running the script using root privileges it exits. <br>
 Next, the script checks to see if the apt package manager is installed. If apt is not installed it exits. <br>
 Finally, script checks to see if Ansible is already installed on the system. If Ansible is installed it exits. <br>
 You will be prompted if you want to install Ansible. Enter "Y" or "y" to install Ansible or any other key to exit without installing.<br>
