@@ -97,6 +97,8 @@ alias aws='ssh -i /home/alec/keys/aws-ceg2410.pem ubuntu@54.243.178.91'
 alias update='sudo apt update; sudo apt upgrade'
 alias 744='chmod -R 744'
 alias 777='chmod -R 777'
+alias lt='ls --human-readable --size -1 -S --classify'
+alias cpv='rsync -ah --info=progress2'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
