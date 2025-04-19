@@ -1,4 +1,3 @@
-# dotfiles
 <h1>Custom dotfiles</h1>
 This dotfiles collection contains the following dotfiles with installation/setup scripts:
 <h2>homefiles</h2>
