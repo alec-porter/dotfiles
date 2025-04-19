@@ -37,7 +37,9 @@ then
 		echo ""
 		echo "The following version of Ansible  was installed"
 		ansible --version
-		echo "Type 'man ansible' to review the manual"
+		echo "Please review the Ansible manual to get started"
+  		sleep 1.5
+  		man ansible
 
 	else
 		echo "Ansible not installed, exiting script."
