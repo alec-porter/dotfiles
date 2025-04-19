@@ -94,8 +94,7 @@ alias l='ls -CF'
 
 # my custom aliases
 alias aws='ssh -i /home/alec/keys/aws-ceg2410.pem ubuntu@54.243.178.91'
-alias saud='sudo apt update'
-alias saug='sudo apt upgrade'
+alias update='sudo apt update; sudo apt upgrade'
 alias 744='chmod -R 744'
 alias 777='chmod -R 777'
 
