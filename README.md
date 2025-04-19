@@ -16,4 +16,10 @@ Installs vundle if not installed and installs colors and plugins to enhance vim.
 
 <br>
 <h2>How to Clone This Repository</h2>
+Using the terminal, navigate to the directory where you want to clone this repository and enter the following command: 
 
+`git clone https://github.com/alec-porter/dotfiles.git`<br>
+Navigate to the directory for the dotfile script you want to run.<br>
+Make the .sh task file executable `chmod +x taskX.sh`.<br>
+Execute the script: `./taskX.sh`.<br>
+Follow the instructions and enjoy!
